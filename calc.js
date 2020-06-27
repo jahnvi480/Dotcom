@@ -1,6 +1,9 @@
 
 //linechart
 		$(document).ready(function(){
+
+
+	    
 		$.get("csvjsonworld10yrs.json",
 
 			function (data){
@@ -78,9 +81,11 @@ var myChart = new Chart(ctx, {
     	maintainAspectRatio: false,
     	title: {
     		display: true,
-    		text: 'Social Media Stats World form May2009-May2020',
+    		text: 'Social Media Statistics form May2009-May2020 (World)',
     		position: 'top',
-    		fontSize: 30,
+    		fontSize: 18,
+    		fontFamily:'Poppins',
+    		
     		fontColor: 'black'
     	},
     	legend: {
@@ -132,21 +137,25 @@ function fun(){
 				            label: '# of Votes',
 				            data: [data[i-1]['Facebook'],(100-data[i-1]['Facebook'])],
 				            backgroundColor: [
-				                '#3b5998',
-				                '#dbd7da'
+				                '#5796ff',
+				                '#000000c4'
 				                
 				            ],
-				            borderWidth: 1,
+				            borderWidth: 0,
+
 				            
 				        }]
 
 				    },
 				    options: {
+				    	responsive:true,
+				    	maintainAspectRatio:false,
+				        
 				    	title: {
 				    		display: true,
-				    		text: 'Facebook',
+				    		text:"Facebook",
 				    		position: 'top',
-				    		fontSize: 20,
+				    		fontSize: 18,
 				    		fontColor: 'black'
 				    	},
 				    	legend: {
@@ -166,20 +175,22 @@ function fun(){
 				            data: [data[i-1]['Instagram'],(100-data[i-1]['Instagram'])],
 				            backgroundColor: [
 				                '#E1306C',
-				                '#dbd7da'
+				                '#000000c4'
 				                
 				            ],
-				            borderWidth: 1,
+				            borderWidth: 0,
 				            
 				        }]
 
 				    },
 				    options: {
+				    	responsive:true,
+				    	maintainAspectRatio:false,
 				    	title: {
 				    		display: true,
-				    		text: 'Instagram',
+				    		text:"Instagram",
 				    		position: 'top',
-				    		fontSize: 20,
+				    		fontSize: 18,
 				    		fontColor: 'black'
 				    	},
 				    	legend: {
@@ -198,21 +209,23 @@ function fun(){
 				            label: '# of Votes',
 				            data: [data[i-1]['Pinterest'],(100-data[i-1]['Pinterest'])],
 				            backgroundColor: [
-				                '#c8232c',
-				                '#dbd7da'
+				                '#fb3b45',
+				                '#000000c4'
 				                
 				            ],
-				            borderWidth: 1,
+				            borderWidth: 0,
 				            
 				        }]
 
 				    },
 				    options: {
+				    	responsive:true,
+				    	maintainAspectRatio:false,
 				    	title: {
 				    		display: true,
-				    		text: 'Pinterest',
+				    		text:"Pinterest",
 				    		position: 'top',
-				    		fontSize: 20,
+				    		fontSize: 18,
 				    		fontColor: 'black'
 				    	},
 				    	legend: {
@@ -231,21 +244,23 @@ function fun(){
 				            label: '# of Votes',
 				            data: [data[i-1]['YouTube'],(100-data[i-1]['YouTube'])],
 				            backgroundColor: [
-				                'rgb(255,0,0)',
-				                '#dbd7da'
+				                '#de0000',
+				                '#000000c4'
 				                
 				            ],
-				            borderWidth: 1,
+				            borderWidth: 0,
 				            
 				        }]
 
 				    },
 				    options: {
+				    	responsive:true,
+				    	maintainAspectRatio:false,
 				    	title: {
 				    		display: true,
-				    		text: 'YouTube',
+				    		text:"YouTube",
 				    		position: 'top',
-				    		fontSize: 20,
+				    		fontSize: 18,
 				    		fontColor: 'black'
 				    	},
 				    	legend: {
@@ -265,20 +280,22 @@ function fun(){
 				            data: [data[i-1]['Twitter'],(100-data[i-1]['Twitter'])],
 				            backgroundColor: [
 				                '#00acee',
-				                '#dbd7da'
+				                '#000000c4'
 				                
 				            ],
-				            borderWidth: 1,
+				            borderWidth: 0,
 				            
 				        }]
 
 				    },
 				    options: {
+				    	responsive:true,
+				    	maintainAspectRatio:false,
 				    	title: {
 				    		display: true,
-				    		text: 'Twitter',
+				    		text:"Twitter",
 				    		position: 'top',
-				    		fontSize: 20,
+				    		fontSize: 18,
 				    		fontColor: 'black'
 				    	},
 				    	legend: {
